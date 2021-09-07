@@ -1,0 +1,35 @@
+{
+  "Registrations": [
+    {
+      "Component": {
+        "Type": "Maven",
+        "Maven": {
+          "ArtifactId": "core",
+          "GroupId": "com.gorisse.thomas.sceneform",
+          "Version": "1.19.2"
+        }
+      }
+    },
+    {
+      "Component": {
+        "Type": "Maven",
+        "Maven": {
+          "ArtifactId": "ux",
+          "GroupId": "com.gorisse.thomas.sceneform",
+          "Version": "1.19.2"
+        }
+      }
+    },
+    {
+      "Component": {
+        "Type": "Maven",
+        "Maven": {
+          "ArtifactId": "sceneform",
+          "GroupId": "com.gorisse.thomas.sceneform",
+          "Version": "1.19.2"
+        }
+      }
+    }
+  ],
+  "Version": 1
+}
