@@ -2,9 +2,9 @@
 
 var TARGET = Argument ("t", Argument ("target", "ci"));
 
-var SF_VERSION = "1.19.2";
+var SF_VERSION = "1.19.5";
 
-var NUGET_VERSION = "1.19.2";
+var NUGET_VERSION = "1.19.5";
 
 var SCENEFORM_JAR_URL = $"https://search.maven.org/remotecontent?filepath=com/gorisse/thomas/sceneform/sceneform/{SF_VERSION}/sceneform-{SF_VERSION}.aar";
 var UX_JAR_URL = $"https://search.maven.org/remotecontent?filepath=com/gorisse/thomas/sceneform/ux/{SF_VERSION}/ux-{SF_VERSION}.aar";

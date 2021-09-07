@@ -6,7 +6,7 @@
         "Maven": {
           "ArtifactId": "core",
           "GroupId": "com.gorisse.thomas.sceneform",
-          "Version": "1.19.2"
+          "Version": "1.19.5"
         }
       }
     },
@@ -16,7 +16,7 @@
         "Maven": {
           "ArtifactId": "ux",
           "GroupId": "com.gorisse.thomas.sceneform",
-          "Version": "1.19.2"
+          "Version": "1.19.5"
         }
       }
     },
@@ -26,7 +26,7 @@
         "Maven": {
           "ArtifactId": "sceneform",
           "GroupId": "com.gorisse.thomas.sceneform",
-          "Version": "1.19.2"
+          "Version": "1.19.5"
         }
       }
     }
