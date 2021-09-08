@@ -44,6 +44,11 @@
   
   <ItemGroup>
     <PackageReference Include="Xamarin.Google.ARCore" Version="1.25.0" />
+    <PackageReference Include="Xamarin.Google.Filament.Filament" Version="1.10.7" />
+    <PackageReference Include="Xamarin.Google.Filament.Gltfio" Version="1.10.7" />
+    <PackageReference Include="Xamarin.Google.Filament.Utils" Version="1.10.7" />
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.6" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.3.0" />
   </ItemGroup>
 
   <ItemGroup>

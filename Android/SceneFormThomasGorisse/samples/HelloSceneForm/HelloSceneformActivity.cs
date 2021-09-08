@@ -8,7 +8,7 @@ using Google.AR.Sceneform;
 using Google.AR.Sceneform.Rendering;
 using Google.AR.Sceneform.UX;
 using System;
-
+using System.Globalization;
 
 namespace HelloSceneForm
 {
@@ -34,19 +34,19 @@ namespace HelloSceneForm
             //set the fragment
             arFragment = (ArFragment)SupportFragmentManager.FindFragmentById(Resource.Id.ux_fragment);
 
-            //load and build the model
-            ((ModelRenderable.Builder) ModelRenderable.InvokeBuilder().SetSource(this, Resource.Raw.andy)).Build(((renderable) =>
-            {
-                andyRenderable = renderable;
+            ////load and build the model
+            //((ModelRenderable.Builder) ModelRenderable.InvokeBuilder().SetSource(this, Resource.Raw.andy)).Build(((renderable) =>
+            //{
+            //    andyRenderable = renderable;
 
-            }));
+            //}));
 
             //add the event handler
             arFragment.TapArPlane += OnTapArPlane;
 
         }
 
-        private void OnTapArPlane(object sender, BaseArFragment.TapArPlaneEventArgs e)
+		    private void OnTapArPlane(object sender, BaseArFragment.TapArPlaneEventArgs e)
         {
             if (andyRenderable == null)
                 return;
@@ -77,7 +77,7 @@ namespace HelloSceneForm
 
             var openglString = ((ActivityManager)activity.GetSystemService(Context.ActivityService)).DeviceConfigurationInfo.GlEsVersion;
 
-            if (Double.Parse(openglString) < MIN_OPENGL_VERSION)
+            if (Double.Parse(openglString, CultureInfo.InvariantCulture) < MIN_OPENGL_VERSION)
             {
                 Toast.MakeText(activity, "Sceneform requires OpenGL ES 3.0 or later", ToastLength.Long).Show();
 
